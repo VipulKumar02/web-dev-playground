@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webpage</title>
+    <link 
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" 
+rel="stylesheet">
+    <style>
+/**{
+    border:1px solid white;
+}*/
+.container{
+    max-width:1500px;
+    margin:auto;
+    padding:20px;
+}
+.navbar{
+    padding:20px;
+    box-shadow:0 5px 10px rgba(0,0,0,0.2);
+}
+.nav-link:hover{
+    color:white !important;
+}
+body{
+    background-color: #434141;
+}
+.carousel{
+    margin-top:0;
+    padding-top:0;
+}
+.carousel img{
+    height:500px;
+    object-fit:cover;
+}
+
+/*.cards{
+    display:flex;
+    justify-content:space-evenly;
+    gap:20px;
+}*/
+.cards{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap:40px;
+    justify-items:center;
+    margin-top:40px;
+}
+.card{
+    display:flex;
+    justify-content:space-between;
+    flex-direction:column;
+    width:200px;
+    height:300px;
+    border-radius: 6px;
+    background-color: #939292;
+    transition:0.3s;
+    
+}
+.card:hover{
+    box-shadow:0 10px 20px rgba(0,0,0,0.3);
+    transform:scale(1.05);
+}
+.card img{
+    width:100%;
+    height:150px;
+    object-fit:cover;
+    border-radius:6px 6px 0 0;
+}
+.card-content{
+    padding:15px;
+}
+.cards-section{
+    background-color:#2d2d2d;
+    padding:50px 20px;
+}
+button{
+    padding:10px;
+    border:none;
+    background:black;
+    color:white;
+    cursor:pointer;
+    border-radius:5px;
+    transition:0.3s;
+}
+button:hover{
+    background:white;
+    color:black;
+}
+.footer{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+@media(max-width:768px){
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <div class="container">
+
+        <a class="navbar-brand" href="#">
+            Youtube
+        </a>
+
+        <button 
+        class="navbar-toggler" 
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#menu">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Videos</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+    <div class="carousel">
+       <div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://images.pexels.com/photos/1144282/pexels-photo-1144282.jpeg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.pexels.com/photos/1144280/pexels-photo-1144280.jpeg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.pexels.com/photos/1144240/pexels-photo-1144240.jpeg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+</div>
+    </div>
+<div class="cards-section">
+    <div class="cards">
+    
+        <div class="card"> 
+            <img src="https://images.pexels.com/photos/2519823/pexels-photo-2519823.jpeg" alt="youtube">
+    
+            <div class="card-content">
+                <h2>Youtube</h2>
+                <p>Watch trending videos</p>
+            </div>
+            <button>Watch Now</button>
+        </div>
+        <div class="card">
+            <img src="https://images.pexels.com/photos/3532550/pexels-photo-3532550.jpeg" alt="youtube">
+    
+            <div class="card-content">
+                <h2>Youtube</h2>
+                <p>Watch trending videos</p>
+            </div>
+            <button>Watch Now</button>
+        </div>
+        <div class="card">
+            <img src="https://images.pexels.com/photos/3532546/pexels-photo-3532546.jpeg" alt="youtube">
+    
+            <div class="card-content">
+                <h2>Youtube</h2>
+                <p>Watch trending videos</p>
+            </div>
+    
+            <button>Watch Now</button>
+        </div>
+
+    </div>
+</div>
+
+
+    <div class="footer">
+        copyright
+    </div>
+
+</div>
+<script 
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js">
+</script>
+</body>
+</html>

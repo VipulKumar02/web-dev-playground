@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping-card</title>  
+    <style>
+body{      
+    background-color: #ffffff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+.card{
+    width:200px;
+    padding:20px;
+    border-radius:20px;
+    box-shadow: 10px 30px 20px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+.card:hover{
+    transform:translateY(-10px);
+}
+img{
+    width:100%;
+    border-radius: 10px;
+}
+.buttons{
+    display:flex;
+    gap:10px;
+}
+button{
+    padding:10px 15px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    transition:0.3s;
+}
+button:hover{
+    background-color: #dcdbdb;
+}
+h3{
+    margin-bottom:5px;
+}
+
+h2{
+    margin-top:0;
+}
+
+    </style>          
+</head>
+<body>
+    <div class="card">
+
+    <img src="shoe.jpg" alt="shoe">
+
+    <h3>Nike</h3>
+
+    <h2>Air Max</h2>
+
+    <p>$120</p>
+
+    <div class="buttons">
+    <button>Buy Now</button>
+    <button>Add to Cart</button>
+    </div>
+
+
+</div>
+</body>
+</html>

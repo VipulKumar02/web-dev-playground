@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar Variations</title>
+    <style>
+        .nav1 a::after{
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            background-color: #190d0d;
+            transform: scaleX(0);
+            transition: transform 0.3s ease-in-out;
+        }
+        .nav1 a:hover::after{
+            transform: scaleX(1);
+        }
+        body{
+            background-color: #585858;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 20px;
+            color: aliceblue;
+        }
+        .nav-container{
+            margin-bottom: 40px;
+        }
+        h2{
+            margin-bottom: 10px;
+        }
+        .nav1{
+            background-color: #1d1e1e;
+            padding: 10px;
+        }
+        .nav1 ul{
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+            display:flex;
+            justify-content: space-around;
+        }
+        .nav1 li{
+            display: inline;
+        }
+        .nav1 a{
+            text-decoration: none;
+            color: aliceblue;
+            background-color: #f45f5f;
+            padding: 5px 15px;
+            position: relative;/*if we dont use it in above nav1 a that after hover doesnt work*/
+        }
+        .nav1 .login-btn{
+            background-color: #3e2aef;
+            color: aliceblue;
+            border: none;
+            padding: 5px 15px;
+            border-radius: 5px;
+            cursor: grabbing;
+        }
+        .navi2 {
+            background-color: #de5555;
+            width: 200px;
+            padding: 20px;
+        }
+        .navi2 ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0%;
+        }
+        .navi2 li{
+            margin-bottom: 12px;
+        }
+        .navi2 a{
+            text-decoration: none;
+            color: aliceblue;
+            display: block;
+            padding: 10px;
+            width: 100%;
+        }
+        .navi2 a:hover{
+            background-color: #ce1616;
+        }
+        .navi2 .login_btn{
+            background-color: #980c0c;
+            color: aliceblue;
+            border: none;
+            width: 100%;
+            padding: 8px;
+            cursor: grabbing;
+        }
+        .navi2 .login_btn:hover{
+            background-color: #db0c0c;
+            border: 1px solid white;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-container">
+        <h2>Variation 1: Horizontal with Underline Effect</h2>
+        <nav class="nav1">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><button class="login-btn">Login</button></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="nav-container">
+        <h2>Variation 2: Vertical with Hover</h2>
+        <nav class="navi2">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><button class="login_btn">Login</button></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="nav-container">
+        <h2>Variation 3: Horizontal with dropdown</h2>
+        <nav class="navi3">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">About</a>
+                    <div class="dropdown-content">
+                        <a href="#">Our Story</a>
+                        <a href="#">Team</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </li>
+                <li><button class="login_btn">Login</button></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>
